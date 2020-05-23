@@ -103,3 +103,19 @@ console.log(randomRoom);
 var randomMystery = [randomSuspect, randomWeapon, randomRoom];
 
 console.log(randomMystery);
+
+var x = document.getElementById("suspect").value;
+
+var y = document.getElementById("weapon").value;
+
+var z = document.getElementById("room").value;
+
+function revealMystery(){
+    var answer;
+    if(answer === randomMystery.space){
+      alert("${firstName} ${lastName} killed Mr. Boddy using the ${weapon} in {room}");
+    }else{
+      console.log("\n");
+      console.log("no!");
+    }
+  }
