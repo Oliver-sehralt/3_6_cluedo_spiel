@@ -87,3 +87,15 @@ const weaponsArray = [
 
 const roomsArray = ["dinning room", "conservatory", "kitchen", "study", "library", "billiard room", "lounge", "ballroom",
 "hall", "spa", "living room", "observatory", "theater", "guest house", "patio"];
+
+var randomSuspect = suspectsArray[Math.floor(Math.random()*suspectsArray.length)];
+
+console.log(randomSuspect);
+
+var randomWeapon = weaponsArray[Math.floor(Math.random()*weaponsArray.length)];
+
+console.log(randomWeapon);
+
+var randomRoom = roomsArray[Math.floor(Math.random()*roomsArray.length)];
+
+console.log(randomRoom);
