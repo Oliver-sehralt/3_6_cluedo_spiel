@@ -99,3 +99,7 @@ console.log(randomWeapon);
 var randomRoom = roomsArray[Math.floor(Math.random()*roomsArray.length)];
 
 console.log(randomRoom);
+
+var randomMystery = [randomSuspect, randomWeapon, randomRoom];
+
+console.log(randomMystery);
