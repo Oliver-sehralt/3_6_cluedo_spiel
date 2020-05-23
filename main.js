@@ -111,7 +111,7 @@ var y = document.getElementById("weapon").value;
 var z = document.getElementById("room").value;
 
 function revealMystery(){
-    var answer;
+    var answer = x && y && z;
     if(answer === randomMystery.space){
       alert("${firstName} ${lastName} killed Mr. Boddy using the ${weapon} in {room}");
     }else{
