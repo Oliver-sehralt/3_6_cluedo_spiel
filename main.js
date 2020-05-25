@@ -111,11 +111,12 @@ var y = document.getElementById("weapon").value;
 var z = document.getElementById("room").value;
 
 function revealMystery(){
-    var answer = [x, y, z];
-    if(answer === randomMystery){
-      alert("${randomSuspect} killed Mr. Boddy using the ${randomWeapon} in ${RandomRoom}");
-    }else{
-      console.log("\n");
-      console.log("no!");
+    if(x == randomSuspect,
+        y == randomWeapon,
+        z == randomRoom) {
+            let text = document.querySelector("reveal"),
+            text.innerHTML = ("${randomSuspect} killed Mr. Boddy using the ${randomWeapon} in ${RandomRoom}“),
+            )} else{
+            text.innerHTML = "Wrong answer. Try again";
     }
-  }
+  };
