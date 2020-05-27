@@ -110,13 +110,15 @@ var y = document.getElementById("weapon").value;
 
 var z = document.getElementById("room").value;
 
-function revealMystery(){
-    if(x == randomSuspect,
-        y == randomWeapon,
-        z == randomRoom) {
-            let text = document.querySelector("reveal"),
-            text.innerHTML = ("${randomSuspect} killed Mr. Boddy using the ${randomWeapon} in ${RandomRoom}“),
-            )} else{
-            text.innerHTML = "Wrong answer. Try again";
-    }
-  };
+var i = [x, y, z];
+
+
+  function revealMystery() {
+    var feedback = document.getElementById('feedback');
+ 
+    if (randomMystery == i) {
+        feedback.innerHTML = `${randomSuspect} killed Mr. Boddy using the ${randomWeapon} in ${RandomRoom}`;
+    } else {
+        feedback.innerHTML = 'Leider falsch. Versuchen Sie es nochmal';
+    }  
+};
